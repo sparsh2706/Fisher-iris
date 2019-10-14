@@ -1,0 +1,132 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+           <style type="text/css">
+
+
+           a:link{
+
+           	      color: green;
+           	      text-decoration: none;   /* four state of link */
+                 }
+           
+           a:visited{
+                      color: maroon;
+
+                    }  
+          
+           a:hover{
+
+           	      background-color: red;
+           	      color:white;
+           	      text-decoration: underline;  /* optional */
+                  }  
+           
+           a:active{
+           	       background: green; /* when clicked colour changes of the link */
+                   }                  
+
+           body
+                {
+                	color: white;
+                    background: black;
+                    background-image: url(photo.jpg);
+                    background-repeat: no-repeat;
+                    background-position: 55% 130px;
+                }
+              a
+                {
+                   font-family: arial;
+                   color: yellow;
+                }	
+             h1
+                {
+                	font-weight: bold;
+                	font-family: arial;
+                	text-align: center;
+                	background-color: silver;
+                	padding-left: 00px;
+                	padding-right: 00px;
+                	border: 5px solid black;
+
+                }  
+              p
+                {
+                   font-family: arial;
+                   font-size:100%;
+                   background-color: black; 
+                   width: 390px;     /* fix width of paragraph */
+                  margin: px;    /*make space all around paragraph */
+                   padding: 10px;  /*to make distance of text from border*/
+                   text-indent: 0px;   /*to move paragraph first line */
+
+                }  
+
+          table {
+                   background: white;
+                   border: 3px solid green; /* order must be maintained */
+                   margin: 50px;
+                   font-family: arial;
+                   font-size: 150%;
+                   text-align: center;
+                   padding-right: 00px;
+
+                }  
+
+             tr {
+                   background: black;
+
+                }  
+
+             td {
+                 border: 2px solid white;
+
+                }   
+             th {
+                  background: green;
+                
+                } 
+           </style>
+ 
+           <title> technothlon </title>
+</head>
+
+<body >
+  <div id="techno" class="tabcontent" style="position:absolute;left:0;top:0" onclick="aww()" color:black><font color="black">..</font></div>
+
+	<script type="text/javascript">
+		function sid() {
+			alert("Welcome to Technothlon!!!!");
+		}
+		
+		
+	</script>
+  <div class="ding"><img src="te.png" height="50" align="center" /></div>
+  <hr>
+    <table border=1><tr> <td id="write"> Hey </td></tr></table>
+    <img src="my2.jpg" height="250">
+    <div><p>"We are always looking for some exciting things but we never try to make things exciting which are already there"</p><p>Every Mystery has its origin in deepest darkest way. Just reach close it will be yours.</p></div>
+
+<script>
+  function aww(){
+    alert("Next level coming soon.");
+    }
+
+  var save=document.getElementById("write");
+  var x,y;
+  document.onmousemove= function Write(e){
+   x=e.clientX; //gives coords wrt image? CHeck: NOPE, wrt doc.
+   y=e.clientY;
+  save.textContent="X: "+ x+" Y: "+y;  //doubt** update imediately..
+  
+  }
+</script>
+
+
+		
+</body>
+</html>
